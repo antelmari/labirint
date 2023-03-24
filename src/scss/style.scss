@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Root UI', sans-serif;
+}
+
+// Технические блоки
+@import "base/fonts.scss";
+@import "base/consts.scss";
+@import "base/mixins.scss";
+
+// Блоки
+@import "blocks/wrapper.scss";
+@import "blocks/products.scss";

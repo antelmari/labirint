@@ -1,0 +1,306 @@
+.products {
+    padding: 20px 0;
+    min-height: 682px;
+    &__title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        color: $blackBasic;
+    }
+    &__slider {
+        padding: 20px 0;
+        @include xs {
+            width: 220px;
+        }
+    }
+    &-card {
+        position: relative;
+        height: 506px;
+        padding: 14px;
+        background-color: $white;
+        border-radius: 10px;
+        transition: 0.5s;
+        &:hover {
+            box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.1);
+            @include lg {
+                box-shadow: none;
+            }
+        }
+        &-cover {
+            position: relative;
+            height: 242px;
+            border: 1px solid $grayLight;
+            border-radius: 8px;
+            padding: 16px;
+            &__img {
+                border-radius: 5px;
+                width: 100%;
+            }
+            &__inscription {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                border-radius: 0px 5px;
+                background-color: $blackBasic;
+                padding: 0 5px 0 11px;
+                height: 25px;
+                display: flex;
+                align-items: center;
+            }
+            &__discount {
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 20px;
+                color: $white;
+            }
+            &__days {
+                margin-left: 4px;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 16px;
+                color: $white;
+            }
+            &__gift {
+                position: absolute;
+                left: 6px;
+                bottom: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 32px;
+                height: 32px;
+                border-radius: 100%;
+                background-color: $orange;
+                img {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+            &__heart {
+                position: absolute;
+                right: -5px;
+                top: -7px;
+                width: 24px;
+                height: 24px;
+                transition: 0.5s;
+                opacity: 0;
+                z-index: 3;
+                cursor: pointer;
+                img {
+                    width: 100%;
+                }
+                &--active {
+                    position: absolute;
+                    right: -5px;
+                    top: -7px;
+                    width: 24px;
+                    height: 24px;
+                    transition: 0.5s;
+                    opacity: 0;
+                    z-index: 2;
+                    cursor: pointer;
+                    img {
+                        width: 100%;
+                    }
+                }
+                &--show {
+                    opacity: 1;
+                }
+            }
+        }
+        &-state {
+            margin-top: 8px;
+            display: flex;
+            justify-content: space-between;
+            &__price {
+                display: flex;
+                align-items: center;
+                &--new {
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 24px;
+                    color: $black;
+                }
+                &--old {
+                    position: relative;
+                    margin-left: 8px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: $grey;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        width: 100%;
+                        height: 1px;
+                        background-color: $grey;
+                        transform: rotate(169.46deg);
+                    }
+                }
+            }
+            &__icon {
+                width: 20px;
+                height: 20px;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        &__counter {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: $grey;
+        }
+        &-descr {
+            margin-top: 8px;
+            height: 66px;
+            &__title {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 22px;
+                color: $black;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                &--grey {
+                    color: $grey;
+                }
+            }
+            &__subtitle {
+                margin-top: 2px;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                color: $grey;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+        &-characteristics {
+            margin-top: 8px;
+            display: flex;
+            column-gap: 6px;
+        }
+        &-rating, &-reviews {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            &__icon {
+                width: 20px;
+                height: 20px;
+                img {
+                    width: 100%;
+                }
+            }
+            &__text {
+                margin-left: 6px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 22px;
+                color: $grey;
+            }
+        }
+        &__btn {
+            margin-top: 8px;
+            width: 100%;
+            height: 44px;
+            border: 1px solid $blackBasic;
+            border-radius: 8px;
+            background-color: $white;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 24px;
+            color: $blackBasic;
+            transition: 0.5s;
+            cursor: pointer;
+            &:focus {
+                outline: none;
+            }
+            &:hover {
+                background-color: $red;
+                border-color: $red;
+                color: $white;
+            }
+            &:disabled {
+                background-color: $greyDisabled;
+                border-color: $greyDisabled;
+                color: $greyText;
+            }
+            &--active {
+                background-color: $blackBasic;
+                border-color: $blackBasic;
+                color: $white;
+                &:hover {
+                    background-color: $blackBasic;
+                    border-color: $blackBasic;
+                }
+            }
+            &--absolute {
+                margin-top: 0;
+                position: absolute;
+                bottom: 60px;
+                width: calc(100% - 28px);
+            }
+        }
+        &__delivery {
+            margin-top: 8px;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 20px;
+            color: $green;
+        }
+        &__title {
+            margin-top: 8px;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 27px;
+            color: $black;
+        }
+    }
+    &__line {
+        margin-top: 63px;
+        width: 100%;
+        border-bottom: 1px solid $greyBorder;
+    }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    position: absolute;
+    top: 22px;
+    width: 30px;
+    height: 30px;
+    &:after {
+        content: none;
+    }
+    img {
+        width: 100%;
+    }
+}
+
+.swiper-button-prev {
+    right: 50px;
+    left: auto;
+    img {
+        transform: scale(-1, 1);
+    }
+    @include xs {
+        right: 90px;
+    }
+    @include xxs {
+        right: 70px;
+    }
+}
+
+.swiper-button-next {
+    right: 0;
+    @include xs {
+        right: 40px;
+    }
+    @include xxs {
+        right: 20px;
+    }
+}

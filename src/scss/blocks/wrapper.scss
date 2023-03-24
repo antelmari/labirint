@@ -1,0 +1,28 @@
+.wrapper {
+    position: relative;
+    width: 1440px;
+    margin: 0 auto;
+    @include xxl {
+        width: 1320px;
+    }
+    @include xl {
+        width: 1140px;
+    }
+    @include lg {
+        width: 960px;
+    }
+    @include md {
+        width: 720px;
+    }
+    @include sm {
+        width: 540px;
+    }
+    @include xs {
+        width: 100%;
+        padding: 0 40px;
+    }
+    @include xxs {
+        min-width: 320px;
+        padding: 0 20px;
+    }
+}

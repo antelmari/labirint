@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабиринт</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <section class="products">
+        <div class="wrapper">
+            <h1 class="products__title">Лучшее</h1>
+            <div class="products__slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="products-card swiper-slide">
+                        <div class="products-card-cover">
+                            <img src="img/images/product-1.jpg" alt="product" class="products-card-cover__img">
+                            <div class="products-card-cover__inscription">
+                                <div class="products-card-cover__discount">-55%</div>
+                                <div class="products-card-cover__days">ещё 2 дня</div>
+                            </div>
+                            <div class="products-card-cover__gift">
+                                <img src="img/icons/gift.svg" alt="gift">
+                            </div>
+                            <div class="products-card-cover__heart">
+                                <img src="img/icons/heart.svg" alt="heart">
+                            </div>
+                            <div class="products-card-cover__heart--active products-card-cover__heart--show">
+                                <img src="img/icons/heart--red.svg" alt="heart">
+                            </div>
+                        </div>
+                        <div class="products-card-state">
+                            <div class="products-card-state__price">
+                                <div class="products-card-state__price--new">1350 ₽</div>
+                                <div class="products-card-state__price--old">500 ₽</div>
+                            </div>
+                            <div class="products-card-state__icon">
+                                <img src="img/icons/price.svg" alt="price">
+                            </div>
+                        </div>
+                        <div class="products-card__counter">за 2 тома</div>
+                        <div class="products-card-descr">
+                            <div class="products-card-descr__title">Пиковая Дама</div>
+                            <div class="products-card-descr__subtitle">Пушкин Александр</div>
+                            <div class="products-card-descr__subtitle">Лабиринт/Детская художественная литература</div>
+                        </div>
+                        <div class="products-card-characteristics">
+                            <div class="products-card-rating">
+                                <div class="products-card-rating__icon">
+                                    <img src="img/icons/star.svg" alt="star">
+                                </div>
+                                <div class="products-card-rating__text">4,8</div>
+                            </div>
+                            <div class="products-card-reviews">
+                                <div class="products-card-reviews__icon">
+                                    <img src="img/icons/chat.svg" alt="chat">
+                                </div>
+                                <div class="products-card-reviews__text">1234</div>
+                            </div>
+                        </div>
+                        <button class="products-card__btn">В корзину</button>
+                        <div class="products-card__delivery">Доставим бесплатно</div>
+                    </div>
+                    <div class="products-card swiper-slide">
+                        <div class="products-card-cover">
+                            <img src="img/images/product-1.jpg" alt="product" class="products-card-cover__img">
+                            <div class="products-card-cover__inscription">
+                                <div class="products-card-cover__discount">-55%</div>
+                                <div class="products-card-cover__days">ещё 2 дня</div>
+                            </div>
+                            <div class="products-card-cover__gift">
+                                <img src="img/icons/gift.svg" alt="gift">
+                            </div>
+                            <div class="products-card-cover__heart products-card-cover__heart--show">
+                                <img src="img/icons/heart.svg" alt="heart">
+                            </div>
+                            <div class="products-card-cover__heart--active">
+                                <img src="img/icons/heart--red.svg" alt="heart">
+                            </div>
+                        </div>
+                        <div class="products-card-state">
+                            <div class="products-card-state__price">
+                                <div class="products-card-state__price--new">1350 ₽</div>
+                                <div class="products-card-state__price--old">500 ₽</div>
+                            </div>
+                            <div class="products-card-state__icon">
+                                <img src="img/icons/price.svg" alt="price">
+                            </div>
+                        </div>
+                        <div class="products-card__counter">за 2 тома</div>
+                        <div class="products-card-descr">
+                            <div class="products-card-descr__title">Пиковая Дама</div>
+                            <div class="products-card-descr__subtitle">Пушкин Александр</div>
+                            <div class="products-card-descr__subtitle">Лабиринт/Детская художественная литература</div>
+                        </div>
+                        <div class="products-card-characteristics">
+                            <div class="products-card-rating">
+                                <div class="products-card-rating__icon">
+                                    <img src="img/icons/star.svg" alt="star">
+                                </div>
+                                <div class="products-card-rating__text">4,8</div>
+                            </div>
+                            <div class="products-card-reviews">
+                                <div class="products-card-reviews__icon">
+                                    <img src="img/icons/chat.svg" alt="chat">
+                                </div>
+                                <div class="products-card-reviews__text">1234</div>
+                            </div>
+                        </div>
+                        <button class="products-card__btn" disabled>В корзину</button>
+                        <div class="products-card__delivery">Доставим бесплатно</div>
+                    </div>
+                    <div class="products-card swiper-slide">
+                        <div class="products-card-cover">
+                            <img src="img/images/product-2.jpg" alt="product" class="products-card-cover__img">
+                            <div class="products-card-cover__heart products-card-cover__heart--show">
+                                <img src="img/icons/heart.svg" alt="heart">
+                            </div>
+                            <div class="products-card-cover__heart--active">
+                                <img src="img/icons/heart--red.svg" alt="heart">
+                            </div>
+                        </div>
+                        <div class="products-card__title">Ожидается</div>
+                        <div class="products-card-descr">
+                            <div class="products-card-descr__title products-card-descr__title--grey">Линейка в ассортименте деревянная</div>
+                            <div class="products-card-descr__subtitle">Феникс линейка</div>
+                        </div>
+                        <div class="products-card-characteristics">
+                            <div class="products-card-rating">
+                                <div class="products-card-rating__icon">
+                                    <img src="img/icons/star.svg" alt="star">
+                                </div>
+                                <div class="products-card-rating__text">4,8</div>
+                            </div>
+                            <div class="products-card-reviews">
+                                <div class="products-card-reviews__icon">
+                                    <img src="img/icons/chat.svg" alt="chat">
+                                </div>
+                                <div class="products-card-reviews__text">1234</div>
+                            </div>
+                        </div>
+                        <button class="products-card__btn products-card__btn--absolute">Найти похожее</button>
+                    </div>
+                    <div class="products-card swiper-slide">
+                        <div class="products-card-cover">
+                            <img src="img/images/product-3.jpg" alt="product" class="products-card-cover__img">
+                            <div class="products-card-cover__heart products-card-cover__heart--show">
+                                <img src="img/icons/heart.svg" alt="heart">
+                            </div>
+                            <div class="products-card-cover__heart--active">
+                                <img src="img/icons/heart--red.svg" alt="heart">
+                            </div>
+                        </div>
+                        <div class="products-card__title">Нет в продаже</div>
+                        <div class="products-card-descr">
+                            <div class="products-card-descr__title products-card-descr__title--grey">Пиковая Дама</div>
+                            <div class="products-card-descr__subtitle">Пушкин Александр</div>
+                            <div class="products-card-descr__subtitle">Лабиринт/Детская художественная литература</div>
+                        </div>
+                        <button class="products-card__btn products-card__btn--absolute">Найти похожее</button>
+                    </div>
+                    <div class="products-card swiper-slide">
+                        <div class="products-card-cover">
+                            <img src="img/images/product-1.jpg" alt="product" class="products-card-cover__img">
+                            <div class="products-card-cover__inscription">
+                                <div class="products-card-cover__discount">-55%</div>
+                                <div class="products-card-cover__days">ещё 2 дня</div>
+                            </div>
+                            <div class="products-card-cover__gift">
+                                <img src="img/icons/gift.svg" alt="gift">
+                            </div>
+                            <div class="products-card-cover__heart products-card-cover__heart--show">
+                                <img src="img/icons/heart.svg" alt="heart">
+                            </div>
+                            <div class="products-card-cover__heart--active">
+                                <img src="img/icons/heart--red.svg" alt="heart">
+                            </div>
+                        </div>
+                        <div class="products-card-state">
+                            <div class="products-card-state__price">
+                                <div class="products-card-state__price--new">1350 ₽</div>
+                                <div class="products-card-state__price--old">500 ₽</div>
+                            </div>
+                            <div class="products-card-state__icon">
+                                <img src="img/icons/price.svg" alt="price">
+                            </div>
+                        </div>
+                        <div class="products-card__counter">за 2 тома</div>
+                        <div class="products-card-descr">
+                            <div class="products-card-descr__title">Пиковая Дама</div>
+                            <div class="products-card-descr__subtitle">Пушкин Александр</div>
+                            <div class="products-card-descr__subtitle">Лабиринт/Детская художественная литература</div>
+                        </div>
+                        <div class="products-card-characteristics">
+                            <div class="products-card-rating">
+                                <div class="products-card-rating__icon">
+                                    <img src="img/icons/star.svg" alt="star">
+                                </div>
+                                <div class="products-card-rating__text">4,8</div>
+                            </div>
+                            <div class="products-card-reviews">
+                                <div class="products-card-reviews__icon">
+                                    <img src="img/icons/chat.svg" alt="chat">
+                                </div>
+                                <div class="products-card-reviews__text">1234</div>
+                            </div>
+                        </div>
+                        <button class="products-card__btn">В корзину</button>
+                        <div class="products-card__delivery">Доставим бесплатно</div>
+                    </div>
+                    <div class="products-card swiper-slide">
+                        <div class="products-card-cover">
+                            <img src="img/images/product-1.jpg" alt="product" class="products-card-cover__img">
+                            <div class="products-card-cover__inscription">
+                                <div class="products-card-cover__discount">-55%</div>
+                                <div class="products-card-cover__days">ещё 2 дня</div>
+                            </div>
+                            <div class="products-card-cover__gift">
+                                <img src="img/icons/gift.svg" alt="gift">
+                            </div>
+                            <div class="products-card-cover__heart products-card-cover__heart--show">
+                                <img src="img/icons/heart.svg" alt="heart">
+                            </div>
+                            <div class="products-card-cover__heart--active">
+                                <img src="img/icons/heart--red.svg" alt="heart">
+                            </div>
+                        </div>
+                        <div class="products-card-state">
+                            <div class="products-card-state__price">
+                                <div class="products-card-state__price--new">1350 ₽</div>
+                                <div class="products-card-state__price--old">500 ₽</div>
+                            </div>
+                            <div class="products-card-state__icon">
+                                <img src="img/icons/price.svg" alt="price">
+                            </div>
+                        </div>
+                        <div class="products-card__counter">за 2 тома</div>
+                        <div class="products-card-descr">
+                            <div class="products-card-descr__title">Пиковая Дама</div>
+                            <div class="products-card-descr__subtitle">Пушкин Александр</div>
+                            <div class="products-card-descr__subtitle">Лабиринт/Детская художественная литература</div>
+                        </div>
+                        <div class="products-card-characteristics">
+                            <div class="products-card-rating">
+                                <div class="products-card-rating__icon">
+                                    <img src="img/icons/star.svg" alt="star">
+                                </div>
+                                <div class="products-card-rating__text">4,8</div>
+                            </div>
+                            <div class="products-card-reviews">
+                                <div class="products-card-reviews__icon">
+                                    <img src="img/icons/chat.svg" alt="chat">
+                                </div>
+                                <div class="products-card-reviews__text">1234</div>
+                            </div>
+                        </div>
+                        <button class="products-card__btn">В корзину</button>
+                        <div class="products-card__delivery">Доставим бесплатно</div>
+                    </div>
+                    <div class="products-card swiper-slide">
+                        <div class="products-card-cover">
+                            <img src="img/images/product-1.jpg" alt="product" class="products-card-cover__img">
+                            <div class="products-card-cover__inscription">
+                                <div class="products-card-cover__discount">-55%</div>
+                                <div class="products-card-cover__days">ещё 2 дня</div>
+                            </div>
+                            <div class="products-card-cover__gift">
+                                <img src="img/icons/gift.svg" alt="gift">
+                            </div>
+                            <div class="products-card-cover__heart products-card-cover__heart--show">
+                                <img src="img/icons/heart.svg" alt="heart">
+                            </div>
+                            <div class="products-card-cover__heart--active">
+                                <img src="img/icons/heart--red.svg" alt="heart">
+                            </div>
+                        </div>
+                        <div class="products-card-state">
+                            <div class="products-card-state__price">
+                                <div class="products-card-state__price--new">1350 ₽</div>
+                                <div class="products-card-state__price--old">500 ₽</div>
+                            </div>
+                            <div class="products-card-state__icon">
+                                <img src="img/icons/price.svg" alt="price">
+                            </div>
+                        </div>
+                        <div class="products-card__counter">за 2 тома</div>
+                        <div class="products-card-descr">
+                            <div class="products-card-descr__title">Пиковая Дама</div>
+                            <div class="products-card-descr__subtitle">Пушкин Александр</div>
+                            <div class="products-card-descr__subtitle">Лабиринт/Детская художественная литература</div>
+                        </div>
+                        <div class="products-card-characteristics">
+                            <div class="products-card-rating">
+                                <div class="products-card-rating__icon">
+                                    <img src="img/icons/star.svg" alt="star">
+                                </div>
+                                <div class="products-card-rating__text">4,8</div>
+                            </div>
+                            <div class="products-card-reviews">
+                                <div class="products-card-reviews__icon">
+                                    <img src="img/icons/chat.svg" alt="chat">
+                                </div>
+                                <div class="products-card-reviews__text">1234</div>
+                            </div>
+                        </div>
+                        <button class="products-card__btn">В корзину</button>
+                        <div class="products-card__delivery">Доставим бесплатно</div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next">
+                <img src="img/icons/arrow.svg" alt="arrow">
+            </div>
+            <div class="swiper-button-prev">
+                <img src="img/icons/arrow.svg" alt="arrow">
+            </div>
+            <div class="products__line"></div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

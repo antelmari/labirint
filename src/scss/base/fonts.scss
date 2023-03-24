@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'PT Root UI';
+    src: url('../fonts/PT Root UI/PTRootUI-Medium.eot');
+    src: local('PT Root UI Medium'), local('PTRootUI-Medium'),
+        url('../fonts/PT Root UI/PTRootUI-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PT Root UI/PTRootUI-Medium.woff2') format('woff2'),
+        url('../fonts/PT Root UI/PTRootUI-Medium.woff') format('woff'),
+        url('../fonts/PT Root UI/PTRootUI-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT Root UI';
+    src: url('../fonts/PT Root UI/PTRootUI-Light.eot');
+    src: local('PT Root UI Light'), local('PTRootUI-Light'),
+        url('../fonts/PT Root UI/PTRootUI-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PT Root UI/PTRootUI-Light.woff2') format('woff2'),
+        url('../fonts/PT Root UI/PTRootUI-Light.woff') format('woff'),
+        url('../fonts/PT Root UI/PTRootUI-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT Root UI';
+    src: url('../fonts/PT Root UI/PTRootUI-Regular.eot');
+    src: local('PT Root UI'), local('PTRootUI-Regular'),
+        url('../fonts/PT Root UI/PTRootUI-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PT Root UI/PTRootUI-Regular.woff2') format('woff2'),
+        url('../fonts/PT Root UI/PTRootUI-Regular.woff') format('woff'),
+        url('../fonts/PT Root UI/PTRootUI-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT Root UI';
+    src: url('../fonts/PT Root UI/PTRootUI-Bold.eot');
+    src: local('PT Root UI Bold'), local('PTRootUI-Bold'),
+        url('../fonts/PT Root UI/PTRootUI-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PT Root UI/PTRootUI-Bold.woff2') format('woff2'),
+        url('../fonts/PT Root UI/PTRootUI-Bold.woff') format('woff'),
+        url('../fonts/PT Root UI/PTRootUI-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
